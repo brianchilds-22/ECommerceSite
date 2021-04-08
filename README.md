@@ -1,4 +1,4 @@
-![screenshot] (Welcome-To-Proshop.jpg)
+![ECommerceSite] (Welcome-To-Proshop.jpg)
 
 # ECommerceSite
 
