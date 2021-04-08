@@ -1,4 +1,4 @@
-![screenshot] (https://github.com/brianchilds-22/ECommerceSite/blob/main/uploads/Welcome-To-Proshop.jpg)
+![eCommerce] (Welcome-To-Proshop.jpg)
 
 # ECommerceSite
 
