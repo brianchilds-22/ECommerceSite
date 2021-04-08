@@ -1,4 +1,5 @@
 ![screenshot] (https://github.com/brianchilds-22/ECommerceSite/blob/main/uploads/Welcome-To-Proshop.jpg)
+![Beer Can Clicky Game](Clicky-Game.gif)
 # ECommerceSite
 
 Built with the MERN stack, Redux and Bootstrap
