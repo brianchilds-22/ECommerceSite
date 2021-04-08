@@ -1,0 +1,38 @@
+{
+  "name": "mern-proshop",
+  "version": "1.0.0",
+  "description": "MERN Shop",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianchilds-22/MERN-Proshop.git"
+  },
+  "author": "Brian Childs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianchilds-22/MERN-Proshop/issues"
+  },
+  "homepage": "https://github.com/brianchilds-22/MERN-Proshop#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.19",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "react-paypal-button-v2": "^2.6.3"
+  }
+}
