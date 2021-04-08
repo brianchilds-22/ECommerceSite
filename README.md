@@ -1,6 +1,6 @@
 # ECommerceSite
 
-Built with the MERN stack & Redux
+Built with the MERN stack, Redux and Bootstrap
 
 # Features
   - Full featured shopping cart   
