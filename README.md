@@ -1,4 +1,5 @@
-![screenshot] (https://github.com/brianchilds-22/ECommerceSite/blob/main/uploads/Welcome-To-Proshop.webm)
+![screenshot] (https://github.com/brianchilds-22/ECommerceSite/blob/main/uploads/Welcome-To-Proshop.jpg)
+
 # ECommerceSite
 
 Built with the MERN stack, Redux and Bootstrap
