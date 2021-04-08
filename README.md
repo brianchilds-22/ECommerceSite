@@ -1,3 +1,4 @@
+![screenshot] ()
 # ECommerceSite
 
 Built with the MERN stack, Redux and Bootstrap
