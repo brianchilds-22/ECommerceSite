@@ -24,7 +24,7 @@ const ProductListScreen = ({ history, match }) => {
         loading:loadingCreate,
         error: errorCreate,
         success: successCreate,
-        poduct: createdProduct
+        product: createdProduct
     } = productCreate
    
     useEffect(() => {
@@ -37,7 +37,7 @@ const ProductListScreen = ({ history, match }) => {
         if (successCreate) {
             history.push(`/admin/product/${createdProduct._id}/edit`)
         } else {
-            dispatch
+            dispatch(listProducts(''))
         }
     },[dispatch, history, userInfo, successDelete , successCreate, createdProduct ])
         
