@@ -101,7 +101,7 @@ export const userListReducer = (state = { users: [] }, action) => {
     }
 }
 
-export const userDeleteReducer = (state = {  }, action) => {
+export const userDeleteReducer = (state = { }, action) => {
     switch (action.type) {
         case USER_DELETE_REQUEST:
             return { loading: true }

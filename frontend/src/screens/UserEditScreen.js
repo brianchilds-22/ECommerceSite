@@ -46,12 +46,12 @@ const UserEditScreen = ({ match, history }) => {
    
     return (
         <>
-        <Link to='/admin/userlist' className='btn btn-light my-3'>Go Back</Link>
+        <Link to='/admin/userlist' className='btn btn-dark my-3'>Go Back</Link>
         <FormContainer>
             <h1>Edit User</h1>
             {loadingUpdate && <Loader />}
             {errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
-            {loading ? <Loader /> : error ? <Message vairant='danger'>{error}</Message> : (
+            {loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message> : (
             <Form onSubmit={submitHandler}>
                 <Form.Group controlId='name'>
                     <Form.Label>Name</Form.Label>
