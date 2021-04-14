@@ -26,8 +26,6 @@ app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/orders', orderRoutes)
 app.use('/api/upload', uploadRoutes)
-app.use(notFound)
-app.use(errorHandler)
 
 
 app.get('/api/config/paypal', (req, res) => 
@@ -50,14 +48,8 @@ if (process.env.NODE_ENV === 'production') {
     });
 }
 
-// app.get('/api/products', (req, res) => {
-//     res.json(products)
-// });
-
-// app.get('/api/products/:id', (req, res) => {
-//     const product = products.find((p) => p._id === req.params.id)
-//     res.json(product)
-// });
+app.use(notFound)
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 5000
 
