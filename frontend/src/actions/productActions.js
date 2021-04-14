@@ -134,7 +134,7 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
     }
 }
 
-export const createProduct = (id) => async (dispatch, getState) => {
+export const createProduct = () => async (dispatch, getState) => {
     try {
         dispatch({ type: PRODUCT_CREATE_REQUEST }) 
 
@@ -169,12 +169,12 @@ export const updateProduct = (product) => async (dispatch, getState) => {
 
         const config = { 
             headers: {
-                'Content-Type': 'appliction/json',
+                'Content-Type': 'application/json',
                 Authorization: `Bearer ${userInfo.token}`,
             },
         }
 
-        const { data } =  await axios.post(`/api/products/${product._id}`, product, config)
+        const { data } =  await axios.put(`/api/products/${product._id}`, product, config)
 
         dispatch ({
             type: PRODUCT_UPDATE_SUCCESS,

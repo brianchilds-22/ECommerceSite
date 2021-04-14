@@ -126,12 +126,12 @@ const createProduct = asyncHandler(async (req,res) => {
     res.status(201).json(createdProduct)
 })
 
-// @desc        Update a products
+// @desc        Update a product
 // @route       PUT /api/products/:id
 // @access      Private/admin
 
 const updateProduct = asyncHandler(async (req,res) => {
-    const { name, price, description, image, brand, category, countInstock,} = req.body
+    const { name, price, description, image, brand, category, countInstock} = req.body
 
     const product = await Product.findById(req.params.id)
 

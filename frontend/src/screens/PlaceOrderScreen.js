@@ -59,7 +59,7 @@ const PlaceOrderScreen = ({ history }) => {
                             <h2>Shipping</h2>
                             <p>
                                 <strong>
-                                    Address:
+                                    Address: 
                                 </strong>
                                 {cart.shippingAddress.address},{' '}
                                 {cart.shippingAddress.city}, {' '}

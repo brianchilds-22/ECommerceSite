@@ -58,7 +58,7 @@ const ProductEditScreen = ({ match, history }) => {
             try {
                 const config = {
                     headers: {
-                        'Contend-Type': 'multipart/form-data'
+                        'Content-Type': 'multipart/form-data'
                     }
                 }
                 const { data } = await axios.post('/api/upload', formData, config)
@@ -73,7 +73,8 @@ const ProductEditScreen = ({ match, history }) => {
 
     const submitHandler = (e) => {
         e.preventDefault()
-        dispatch(updateProduct({
+        dispatch(
+            updateProduct({
             _id: productId,
             name,
             price,
