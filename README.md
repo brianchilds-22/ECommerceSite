@@ -17,3 +17,7 @@ Built with the MERN stack, Redux and Bootstrap
   - Checkout Process (shipping, payment method, etc)
   - PayPal integration            
   - Seed Database
+
+
+# Deployed via Heroku
+[https://ecommerce-app-brichi.herokuapp.com/]
